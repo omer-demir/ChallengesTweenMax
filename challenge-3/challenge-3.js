@@ -9,8 +9,6 @@ const kennedySpaceCenterLocation = {
     longitude: -81.1186103
 }
 
-
-
 function updateWeatherResult(currentWeather) {
     const sunrise__time = document.querySelector('.sunrise__time')
     const sunset__time = document.querySelector('.sunset__time')
@@ -96,15 +94,11 @@ function getWeatherResult() {
 function getNasaInformation() {
     const apiKey = 'fArABG63x3BcysZqgIafVG2FLM7WVF8iyTf88cph';
 
-
-
     const today = new Date();
     const startDate = today.toISOString().slice(0, 10);
 
     const url = `https://api.nasa.gov/neo/rest/v1/feed/today?api_key=${apiKey}&detailed=false`
     const imageUrl = `https://api.nasa.gov/EPIC/api/enhanced/date/2019-06-25?api_key=${apiKey}`
-    // Account Email: ofaruk.demir@gmail.com
-    // Account ID: f77c5555-b8fe-4216-acc4-fda5d4b61eec
     apiBuilder(url)
         .then(function (response) {
             return response.json();
