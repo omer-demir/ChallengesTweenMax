@@ -158,4 +158,4 @@ function showAnimation() {
     );
 }
 
-showAnimation();
+// showAnimation();
