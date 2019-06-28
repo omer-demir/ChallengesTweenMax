@@ -11,8 +11,20 @@
 }
 
 body {
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(mars.jpg);
+    background-size: cover;
+    color:white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+
+    font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -21,6 +33,8 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 12%;
+    overflow: auto;
 }
 
 .row {
@@ -110,15 +124,71 @@ body {
     max-width: 100%;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 svg {
-	max-width: 18rem;
-	max-height: 18rem;
-	width: 100%;
+    max-width: 18rem;
+    max-height: 18rem;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: none;
+    max-height: none;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.martian__time {
+    position: relative;
+    left: -3em;
+}
+
+.earth__time {
+    position: relative;
+    right: -4em;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h1.mars{
+    margin-right:2em;
+}
+
+h1.earth{
+    margin-left:2.5em;
+}
+
+h1 span {
+    display: block;
+    font-weight: 600;
+    margin-right: 1em;
 }

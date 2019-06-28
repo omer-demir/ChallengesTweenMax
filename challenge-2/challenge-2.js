@@ -45,6 +45,8 @@ function showTime() {
     hourTween.progress(hoursAsSeconds / twelveHours);
     minuteTween.progress(minutesAsSeconds / oneHour);
     secondsTween.progress(secondsAsSeconds / oneSecond);
+
+    document.querySelector('.earth__time-display').textContent = datetime.toTimeString().substring(0,8);
 }
 
 function showMarsTime() {
@@ -57,6 +59,8 @@ function showMarsTime() {
     martianHourTween.progress(hoursAsSeconds / twelveHours);
     martianMinuteTween.progress(minutesAsSeconds / oneHour);
     martianSecondsTween.progress(secondsAsSeconds / oneSecond);
+
+    document.querySelector('.mars__time-display').textContent = `${dateFromEarthDate.json.HH}:${dateFromEarthDate.json.MM}:${dateFromEarthDate.json.ss}`;
 }
 
 showTime();
@@ -144,18 +148,7 @@ function showAnimation() {
 
         // Animate the Stars
         .to('#stars', day_night_cycle_time / 2, { opacity: 1 }, day_night_cycle_time / 2, 0)
-        .from("#stars", day_night_cycle_time - (day_night_cycle_time / 4), { y: 150, rotation: -15, ease: animation_ease }, day_night_cycle_time / 4, 0)
-
-        ;
-
-    // Console Log Animation Durations
-    console.log('\n' +
-        'animation_toNight duration: ' + animation_toNight.duration().toFixed(2) + ', \n' +
-        'animation_toNight repeat delay: ' + animation_delay + ', \n' +
-        'animation_water duration: ' + animation_water.duration().toFixed(2) + ', \n' +
-        'animation_cloud duration: ' + animation_cloud.duration().toFixed(2) + ', \n' +
-        'animation_stars duration: ' + animation_stars.duration().toFixed(2) + '\n'
-    );
+        .from("#stars", day_night_cycle_time - (day_night_cycle_time / 4), { y: 150, rotation: -15, ease: animation_ease }, day_night_cycle_time / 4, 0);
 }
 
-// showAnimation();
+showAnimation();
