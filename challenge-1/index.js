@@ -68,6 +68,6 @@ document.getElementById("speedBtn").addEventListener("click", function () {
 document.getElementById('runSpaceTravel').addEventListener("click", function () {
     TweenLite.to('#space__travel', 10, { autoAlpha: 1, display: 'block' });
     TweenLite.from("#spaceship", 10, { scale: 0.3, ease: Circ.easeOut });
-    TweenLite.to("#spaceship", 10, { x: 1720, opacity: 1, scale: 1.5, ease: Circ.easeOut });
+    TweenLite.to("#spaceship", 10, { x: 1400, opacity: 1, scale: 1.5, ease: Circ.easeOut });
 });
 
