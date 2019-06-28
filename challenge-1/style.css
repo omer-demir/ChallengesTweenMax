@@ -1,0 +1,322 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --rotation-throttle: 0deg;
+    --rotation-gas: 0deg;
+    --rotation-oxygen: 0deg;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./background.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+}
+
+
+.loader-container {
+    height: 8rem;
+    overflow: hidden;
+}
+
+.loader-container.throttle .loader {
+    transform: rotate(var(--rotation-throttle));
+}
+
+.loader-container.gas .loader {
+    transform: rotate(var(--rotation-gas));
+}
+
+.loader-container.oxygen .loader {
+    transform: rotate(var(--rotation-oxygen));
+}
+
+.loader {
+    background: transparent;
+    border: 30px solid #D7ECA6;
+    border-radius: 50%;
+    height: 16rem;
+    transition: transform .2s ease;
+    position: relative;
+    width: 16rem;
+}
+
+
+.loader::before {
+    content: '';
+    border: 30px solid #8CC800;
+    border-left-color: transparent;
+    border-radius: 50%;
+    border-top-color: transparent;
+    height: 16rem;
+    left: -30px;
+    position: absolute;
+    top: -30px;
+    transform: rotate(45deg);
+    width: 16rem;
+    z-index: 2;
+}
+
+.loader__title {
+    color: #8CC800;
+    font-size: 5rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-250%);
+}
+
+.meter {
+    width: 100%;
+    height: 3px;
+    background-color: grey
+}
+
+.meter__indicator {
+    width: 10px;
+    height: 25px;
+    background-color: black;
+    position: relative;
+    top: -12.5px;
+}
+
+.icon {
+    display: inline-block;
+    /* icon primary color */
+    color: #06272f;
+    height: 1em;
+    width: 1em;
+}
+
+.icon use {
+    /* icon secondary color - fill */
+    fill: inherit;
+}
+
+.icon.icon-outline use {
+    /* icon secondary color - stroke */
+    stroke: inherit;
+}
+
+.icon-xs {
+    height: 0.5em;
+    width: 0.5em;
+}
+
+.icon-sm {
+    height: 0.8em;
+    width: 0.8em;
+}
+
+.icon-lg {
+    height: 1.6em;
+    width: 1.6em;
+}
+
+.icon-xl {
+    height: 2em;
+    width: 2em;
+}
+
+.icon-text-aligner {
+    /* add this class to parent element that contains icon + text */
+    display: flex;
+    align-items: center;
+}
+
+.icon-text-aligner .icon {
+    color: inherit;
+    margin-right: 0.4em;
+    flex-shrink: 0;
+}
+
+.icon-text-aligner .icon.icon-align-right {
+    margin-right: 0;
+    margin-left: 0.4em;
+}
+
+.icon-text-aligner .icon use {
+    color: inherit;
+    fill: currentColor;
+}
+
+.icon-text-aligner .icon.icon-outline use {
+    stroke: currentColor;
+}
+
+.icon {
+    fill: currentColor;
+    stroke: none;
+}
+
+.icon.icon-outline {
+    stroke: currentColor;
+}
+
+.icon use {
+    stroke: none;
+}
+
+.icon-outline.icon-stroke-1 {
+    stroke-width: 1px;
+}
+
+.icon-outline.icon-stroke-2 {
+    stroke-width: 2px;
+}
+
+.icon-outline.icon-stroke-3 {
+    stroke-width: 3px;
+}
+
+.icon-outline.icon-stroke-4 {
+    stroke-width: 4px;
+}
+
+.icon-outline.icon-stroke-1 use,
+.icon-outline.icon-stroke-3 use {
+    -webkit-transform: translateX(0.5px) translateY(0.5px);
+    -moz-transform: translateX(0.5px) translateY(0.5px);
+    -ms-transform: translateX(0.5px) translateY(0.5px);
+    -o-transform: translateX(0.5px) translateY(0.5px);
+    transform: translateX(0.5px) translateY(0.5px);
+}
+
+.svg-wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff96;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.svg-wrapper p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn {
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 30%;
+    margin-top: 10px;
+    transition: all 1s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}

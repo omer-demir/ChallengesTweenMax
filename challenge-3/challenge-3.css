@@ -1,0 +1,198 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --rotation-throttle: 0deg;
+    --rotation-gas: 0deg;
+    --rotation-oxygen: 0deg;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p span {
+    display: block;
+    font-weight: 600;
+}
+
+
+figure {
+    margin: 1rem;
+    position: relative;
+}
+
+figure figcaption {
+    background: rgba(250, 250, 250, .8);
+    bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    -webkit-transition: max-height 0.3s ease-out;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figure p {
+    margin-top: .5rem;
+}
+
+@media screen and (min-width: 701px) {
+    figure {
+        width: calc(100% - 2rem);
+    }
+
+    figure figcaption {
+        height: 65px;
+    }
+
+    figure:hover figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: height .5s ease-in;
+    }
+
+    figure:hover p {
+        opacity: 1;
+        -webkit-transition: opacity .5s ease-in .6s;
+        -moz-transition: opacity .5s ease-in .6s;
+        -ms-transition: opacity .5s ease-in .6s;
+        transition: opacity .5s ease-in .6s;
+    }
+}
+
+section .section__body {
+    display: flex;
+}
+
+section .section__body figure {
+    flex: 2;
+}
+
+section .section__body .details {
+    flex: 1;
+}
+
+section .section__body .details ul {
+    list-style-type: none;
+}
+
+section .section__body .details .astroid__name {
+    font-size: 19px;
+    font-weight: bold;
+    color:red;
+}
+
+section .section__body .details p span {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

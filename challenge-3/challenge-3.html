@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 3 - Zumre Ocak</title>
+    <link rel="stylesheet" href="challenge-3.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Welcome to interplanetary system</h1>
+                <section>
+                    <div class="section__header"></div>
+                    <div class="section__body">
+                        <figure>
+                            <img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted_large/public/Rocket_Garden.jpg?itok=3zTqo5da&timestamp=1446568827"
+                                alt="From earth" id="earth__image" />
+                            <figcaption>
+                                Current image of Earth
+                            </figcaption>
+                        </figure>
+                        <div class="details">
+                            <h2>Description</h2>
+                            <h4>Asteroid List</h4>
+                            <ul id="astroids">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <figure>
+                    <img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted_large/public/Rocket_Garden.jpg?itok=3zTqo5da&timestamp=1446568827"
+                        alt="Sunflowers" />
+                    <figcaption>
+                        Kennedy Space Station
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3">
+                <figure>
+                    <img src="https://content.satimagingcorp.com/static/galleryimages/geoeye-1-kennedy-space-center.jpg"
+                        alt="Sunflowers" />
+                    <figcaption>
+                        Kennedy Space Station
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3">
+                <figure>
+                    <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/lc39_area.jpg"
+                        alt="Sunflowers" />
+                    <figcaption>
+                        Kennedy Space Station
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3">
+                <figure>
+                    <img src="https://media2.fdncms.com/orlando/imager/u/blog/16596275/ksc_vc_entrance_meatball_and_fountain.jpg?cb=1533053653"
+                        alt="Sunflowers" />
+                    <figcaption>
+                        Kennedy Space Station
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Current Weather Conditions</p>
+            </div>
+            <div class="col-2">
+                <div class="sunrise text-center">
+                    <p>Sunrise at <span class="sunrise__time"></span></p>
+                    <img src="./icons/sun-fog-29.png" alt="">
+                </div>
+                <div class="sunset text-center">
+                    <p>Sunset at <span class="sunset__time"></span></p>
+                    <img src="./icons/sun-fog-30.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="wind text-center">
+                    <p>Wind speed <span class="wind__speed"></span></p>
+                    <p>Wind direction <span class="wind__direction"></span></p>
+                    <img src="./icons/wind-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="temp text-center">
+                    <p>Current temperature <span class="temp__current"></span></p>
+                    <p>Feeling temperature <span class="temp__feeling"></span></p>
+                    <img src="./icons/temperature-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="clouds text-center">
+                    <p>Clouds percentage <span class="clouds__percentage"></span></p>
+                    <img src="./icons/cloud-forecast.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="weather text-center">
+                    <p>Weather status <span class="weather__status"></span></p>
+                    <img id="weather__status__icon" src="./icons/cloud-forecast.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="visibility text-center">
+                    <p>Visibility distance <span class="visibility__distance"></span></p>
+                    <img src="./icons/cloud-forecast.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="challenge-3.js"></script>
+
+</html>

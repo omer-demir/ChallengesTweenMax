@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 2 - Zumre Ocak</title>
+    <link rel="stylesheet" href="challenge-2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                    <h2 class="text-center">Sun is shining!</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+
+                        <circle id="path-1" cx="409.6" cy="409.6" r="409.6" />
+
+                        <linearGradient id="nighttime-gradient" x1="50%" y1="0%" y2="100%">
+                            <stop stop-color="#060414" offset="0%" />
+                            <stop stop-color="#416584" offset="100%" />
+                        </linearGradient>
+
+                        <linearGradient id="daytime-gradient" x1="50%" y1="0%" y2="100%">
+                            <stop stop-color="#8CE7FF" offset="0%" />
+                            <stop stop-color="#A2F2FF" offset="100%" />
+                        </linearGradient>
+
+                        <path id="path-6" d="M0 283L242 0l230 283z" />
+
+                        <path id="path-8" d="M0 335L214.2 0 418 335z" />
+
+                        <circle id="path-12" cx="511.6" cy="511.6" r="409.6" />
+
+                    </defs>
+
+                    <g fill="none" fill-rule="evenodd">
+
+                        <g id="Landscape" transform="translate(102 102)">
+
+                            <mask id="mask-2" fill="#fff">
+                                <use xlink:href="#path-1" />
+                            </mask>
+
+                            <use id="Container" fill="#D8D8D8" xlink:href="#path-1" />
+
+                            <path id="Day-Time" fill="url(#daytime-gradient)" d="M-20-20h860v860H-20z"
+                                mask="url(#mask-2)" />
+
+                            <g id="stars" fill="#FFF" fill-rule="nonzero" opacity="0">
+                                <path id="star-one" stroke="#FFF"
+                                    d="M104.3 272.07l-7.67.48-.07-1 8-.5-5.36-6.7.78-.6 5.4 6.73 5.8-8.7.83.55-5.7 8.6 6.3-.38.06 1-6.1.38 5.45 6.8-.8.63-5.73-7.2-5.44 8.17-.82-.56 5.14-7.7zm.7-1.05l-.45.03.24.3.2-.33zm1.03.28l-.46.7.97-.07-.5-.63zm-1.72.77l1.05-.06.13.2.12-.2h-.26l-.53-.63-.5.72zm2-1.13l-.5.04-.4-.5-.36.54.77-.04.26.32.24-.36z"
+                                    mask="url(#mask-2)" transform="rotate(30 104.594 271.05)" />
+                                <path id="star-two" stroke="#FFF"
+                                    d="M320.3 214.07l-7.67.48-.07-1 8-.5-5.36-6.7.78-.6 5.4 6.73 5.8-8.7.83.55-5.7 8.6 6.3-.38.06 1-6.1.38 5.45 6.8-.8.63-5.73-7.2-5.44 8.17-.82-.56 5.14-7.7zm.7-1.05l-.45.03.24.3.2-.33zm1.03.28l-.46.7.97-.07-.5-.63zm-1.72.77l1.05-.06.13.2.12-.2h-.26l-.53-.63-.5.72zm2-1.13l-.5.04-.4-.5-.36.54.77-.04.26.32.24-.36z"
+                                    mask="url(#mask-2)" transform="rotate(30 320.594 213.05)" />
+                                <path id="star-three" stroke="#FFF"
+                                    d="M462.72 337.02l-7.7.48-.05-1 8-.5-5.36-6.7.8-.6 5.4 6.73 5.8-8.7.85.55-5.75 8.6 6.3-.38.05 1-6.1.38 5.46 6.8-.8.63-5.73-7.15-5.43 8.16-.84-.56 5.13-7.7zm.7-1.05l-.46.03.24.3.22-.33zm1.02.28l-.47.7.97-.07-.5-.63zm-1.72.77l1-.06.13.16.12-.18-.25.02-.52-.66-.48.72zm1.95-1.13h-.5l-.4-.5-.35.54.76-.04.26.33.23-.36z"
+                                    mask="url(#mask-2)" />
+                                <path id="star-four" stroke="#FFF"
+                                    d="M692.75 387.3l-7.7.48-.05-1 8-.5-5.36-6.7.78-.6 5.4 6.72 5.8-8.7.83.55-5.75 8.62 6.3-.4.06 1-6.08.4 5.44 6.8-.78.62-5.75-7.2-5.48 8.12-.83-.55 5.13-7.7zm.7-1.05l-.46.03.2.3.22-.33zm1.02.27l-.46.7 1-.06-.5-.64zm-1.72.78l1-.07.14.17.1-.18h-.27l-.53-.64-.47.72zm1.95-1.13l-.5.03-.4-.5-.35.55.76-.05.3.32.23-.35z"
+                                    mask="url(#mask-2)" transform="rotate(60 693.03 386.277)" />
+                            </g>
+
+                            <circle id="sun" cx="499" cy="481" r="127" fill="#FFF688" mask="url(#mask-2)" />
+
+                            <g mask="url(#mask-2)">
+
+                                <g id="mountains">
+                                    <g id="mountain-one" transform="translate(68 323)">
+                                        <mask id="mask-7" fill="#fff">
+                                            <use xlink:href="#path-6" />
+                                        </mask>
+                                        <use fill="#DDE9EC" xlink:href="#path-6" />
+                                        <path id="snow" fill="#FFF"
+                                            d="M137.5 82.8c24.7-18 59.2-18 103.4 0s76 15.8 95-6.8l-76-98L137 83z"
+                                            mask="url(#mask-7)" />
+                                    </g>
+                                    <g id="mountain-two" transform="translate(-27 271)">
+                                        <mask id="mask-9" fill="#fff">
+                                            <use xlink:href="#path-8" />
+                                        </mask>
+                                        <use fill="#CEDDE0" xlink:href="#path-8" />
+                                        <path id="snow" fill="#FFF"
+                                            d="M122 97.4c21.8-21.3 52.3-21.3 91.5 0 39 21.4 67.3 18.7 84.6-8L231-26 122 97.3z"
+                                            mask="url(#mask-9)" />
+                                    </g>
+                                </g>
+
+                                <g id="hills">
+                                    <path id="hill-one" fill="#B6D788"
+                                        d="M336 663c23.3-88 72.7-132.4 148-133 75.3-.5 121.7 43.8 139 133H336z" />
+                                    <path id="hill-two" fill="#C5EA7D"
+                                        d="M171 596c20.8-67.6 64.8-101.6 132-102 67.2-.4 108.5 33.6 124 102H171z" />
+                                    <path id="hill-three" fill="#D7F1A4"
+                                        d="M-61 610c29.3-106 91-159.3 185.6-160 94.4-.7 152.7 52.7 174.4 160H-61z" />
+                                    <path id="hill-four" fill="#D7F1A4" transform="translate(480 465)"
+                                        d="M0 160C29.3 54 91 .7 185.6 0 280-.7 338.3 52.7 360 160H0z" />
+                                </g>
+
+                                <path id="sand" fill="#FEFFDA"
+                                    d="M-49.8 615c63-39 84-46 218-46S290 572 424 580s167.2-19 271.2 0c69.3 12.7 135.3 5 198-23l-408 298h-266C-32.4 739.7-122 659.7-49.8 615z" />
+
+                                <path id="water-2" fill="#65CFD2" fill-opacity="0"
+                                    d="M9 634.6c-79.3-31.4-77-42.3 7-32.6 126 14.5 239 27.5 350 13s264 0 359 15c63.3 10 101.7.7 115-28L580 870H235L9 634.7z" />
+
+                                <path id="water" fill="#65CFD2"
+                                    d="M9 634.6c66.7-19.3 142-24.2 226-14.5 126 15 225 15 336 0 74-9 154-4 240 15L580 870H235L9 634.7z" />
+
+                            </g>
+
+                            <path id="nighttime-overlay" fill="url(#nighttime-gradient)" fill-opacity=".5"
+                                d="M-20-20h860v860H-20z" style="mix-blend-mode:multiply" opacity="0"
+                                mask="url(#mask-2)" />
+
+                            <circle id="moon" cx="-85.5" cy="300.5" r="61.5" fill="#FFF" mask="url(#mask-2)"
+                                opacity=".9" />
+
+                            <path id="cloud" fill="#FFF"
+                                d="M522.6 164.7c-21.5 0-40 12.6-44.7 30h-1c-19 0-34 13-34 28.8v.7c0 16 15 28.8 34 28.8h174c19 0 34-13 34-28.8v-.7c0-15.5-15-28.3-33-28.8.2-2.7.4-5.3.4-8 0-30.7-29.5-55.7-66-55.7-26.4 0-50.2 13.5-60.4 34l-4-.3z"
+                                mask="url(#mask-2)" />
+
+                            <g id="snow-bottom-layer" fill="#FFF" fill-opacity=".3" transform="translate(13 -717)">
+                                <ellipse cx="6.7" cy="1127.17" rx="6.7" ry="6.14" />
+                                <ellipse cx="154.09" cy="1239.94" rx="6.7" ry="6.14" />
+                                <ellipse cx="444.39" cy="1178.53" rx="6.7" ry="6.14" />
+                                <ellipse cx="802.81" cy="1434.23" rx="6.7" ry="6.14" />
+                                <ellipse cx="848.59" cy="1290.19" rx="6.7" ry="6.14" />
+                                <ellipse cx="709.02" cy="1629.63" rx="6.7" ry="6.14" />
+                                <ellipse cx="533.72" cy="1491.17" rx="6.7" ry="6.14" />
+                                <ellipse cx="359.53" cy="1579.38" rx="6.7" ry="6.14" />
+                                <ellipse cx="275.79" cy="1378.4" rx="6.7" ry="6.14" />
+                                <ellipse cx="171.95" cy="1591.66" rx="6.7" ry="6.14" />
+                                <ellipse cx="816.21" cy="863.66" rx="6.7" ry="6.14" />
+                                <ellipse cx="668.82" cy="976.44" rx="6.7" ry="6.14" />
+                                <ellipse cx="378.52" cy="915.02" rx="6.7" ry="6.14" />
+                                <ellipse cx="266.86" cy="1121.59" rx="6.7" ry="6.14" />
+                                <ellipse cx="126.17" cy="964.15" rx="6.7" ry="6.14" />
+                                <ellipse cx="113.89" cy="1366.12" rx="6.7" ry="6.14" />
+                                <ellipse cx="441.04" cy="1290.19" rx="6.7" ry="6.14" />
+                                <ellipse cx="922.28" cy="1053.48" rx="6.7" ry="6.14" />
+                                <ellipse cx="698.97" cy="1177.42" rx="6.7" ry="6.14" />
+                                <ellipse cx="990.39" cy="1525.79" rx="6.7" ry="6.14" />
+                                <ellipse cx="6.7" cy="269.65" rx="6.7" ry="6.14" />
+                                <ellipse cx="154.09" cy="382.42" rx="6.7" ry="6.14" />
+                                <ellipse cx="444.39" cy="321.01" rx="6.7" ry="6.14" />
+                                <ellipse cx="802.81" cy="576.71" rx="6.7" ry="6.14" />
+                                <ellipse cx="848.59" cy="432.67" rx="6.7" ry="6.14" />
+                                <ellipse cx="709.02" cy="772.1" rx="6.7" ry="6.14" />
+                                <ellipse cx="533.72" cy="633.65" rx="6.7" ry="6.14" />
+                                <ellipse cx="359.53" cy="721.86" rx="6.7" ry="6.14" />
+                                <ellipse cx="275.79" cy="520.88" rx="6.7" ry="6.14" />
+                                <ellipse cx="171.95" cy="734.14" rx="6.7" ry="6.14" />
+                                <ellipse cx="816.21" cy="6.14" rx="6.7" ry="6.14" />
+                                <ellipse cx="668.82" cy="118.91" rx="6.7" ry="6.14" />
+                                <ellipse cx="378.52" cy="57.5" rx="6.7" ry="6.14" />
+                                <ellipse cx="266.86" cy="264.07" rx="6.7" ry="6.14" />
+                                <ellipse cx="126.17" cy="106.63" rx="6.7" ry="6.14" />
+                                <ellipse cx="113.89" cy="508.6" rx="6.7" ry="6.14" />
+                                <ellipse cx="441.04" cy="432.67" rx="6.7" ry="6.14" />
+                                <ellipse cx="922.28" cy="195.96" rx="6.7" ry="6.14" />
+                                <ellipse cx="698.97" cy="319.9" rx="6.7" ry="6.14" />
+                            </g>
+
+                            <g id="snow-top-layer" fill="#FFF" fill-opacity=".6" transform="translate(24 -963)">
+                                <ellipse cx="8.93" cy="866.69" rx="8.93" ry="8.93" />
+                                <ellipse cx="211.07" cy="1033.11" rx="8.93" ry="8.93" />
+                                <ellipse cx="612" cy="942.64" rx="8.93" ry="8.93" />
+                                <ellipse cx="764.99" cy="1245.31" rx="8.93" ry="8.93" />
+                                <ellipse cx="958.2" cy="1015.24" rx="8.93" ry="8.93" />
+                                <ellipse cx="976.07" cy="1606.07" transform="rotate(180 976.066 1606.065)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="733.72" cy="1402.79" transform="rotate(180 733.724 1402.794)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="494.73" cy="1532.35" transform="rotate(180 494.734 1532.35)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="378.59" cy="1236.38" transform="rotate(180 378.588 1236.38)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="26.8" cy="1457.52" transform="rotate(180 26.803 1457.52)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="8.93" cy="8.93" rx="8.93" ry="8.93" />
+                                <ellipse cx="211.07" cy="175.35" rx="8.93" ry="8.93" />
+                                <ellipse cx="612" cy="84.88" rx="8.93" ry="8.93" />
+                                <ellipse cx="764.99" cy="387.56" rx="8.93" ry="8.93" />
+                                <ellipse cx="958.2" cy="157.48" rx="8.93" ry="8.93" />
+                                <ellipse cx="976.07" cy="748.31" transform="rotate(180 976.066 748.306)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="733.72" cy="545.03" transform="rotate(180 733.724 545.035)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="494.73" cy="674.59" transform="rotate(180 494.734 674.592)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="378.59" cy="378.62" transform="rotate(180 378.588 378.62)" rx="8.93"
+                                    ry="8.93" />
+                                <ellipse cx="26.8" cy="599.76" transform="rotate(180 26.803 599.76)" rx="8.93"
+                                    ry="8.93" />
+                            </g>
+
+                        </g>
+
+                        <mask id="mask-13" fill="#fff">
+                            <use xlink:href="#path-12" />
+                        </mask>
+
+                        <g id="border">
+                            <use id="border-one" stroke="#D6E1E2" stroke-width="50" xlink:href="#path-12" />
+                            <use stroke="#FFF" stroke-width="16" xlink:href="#path-12" />
+                        </g>
+
+                    </g>
+
+                </svg>
+            </div>
+            <div class="col-4">
+                <h2 class="text-center">Earth time</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" id="clock" viewBox="0 0 200 200">
+                    <g>
+                        <ellipse ry="98.333335" rx="98.333335" id="svg_2" cy="99.083343" cx="99.083342"
+                            stroke-width="1.5" fill="#DDDDDD" />
+                        <ellipse ry="3.888889" rx="3.888889" id="svg_4" cy="99.480005" cx="98.844871" stroke-width="1.5"
+                            stroke="#000000" fill="#000000" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="29.011012" x2="98.679308"
+                            y1="9.487236" x1="98.679308" fill-opacity="null" stroke-opacity="null" stroke-width="4"
+                            stroke="#000000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="188.952263" x2="98.881328"
+                            y1="169.428488" x1="98.881328" fill-opacity="null" stroke-opacity="null" stroke-width="4"
+                            stroke="#000000" fill="none" />
+                        <line transform="rotate(90 179.04959106445315,99.25782012939455) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_7" y2="109.019706" x2="179.04958" y1="89.495931"
+                            x1="179.04958" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(90 18.535934448242177,99.25782012939455) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_8" y2="109.019706" x2="18.535938" y1="89.495931"
+                            x1="18.535938" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(30 138.88128662109378,30.191871643066396) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_9" y2="39.953759" x2="138.881277" y1="20.429984"
+                            x1="138.881277" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(60 168.30883789062497,59.24907684326173) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_10" y2="69.010961" x2="168.30885" y1="49.487185"
+                            x1="168.30885" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(120 168.342529296875,139.6281280517578) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_11" y2="149.390025" x2="168.342523" y1="129.86625"
+                            x1="168.342523" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_12" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(30 58.847702026367244,168.71022033691406) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_14" y2="178.4721" x2="58.847705" y1="158.948325"
+                            x1="58.847705" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(60 29.42013549804691,139.4173126220703) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_15" y2="149.179211" x2="29.420132" y1="129.655435"
+                            x1="29.420132" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(120 29.58848571777344,59.42621612548828) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_16" y2="69.188104" x2="29.588483" y1="49.664328"
+                            x1="29.588483" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 58.881378173828125,30.166999816894524) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_17" y2="39.928887" x2="58.88138" y1="20.405112" x1="58.88138"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000" fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_18" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_19" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <g id="min">
+                            <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_20"
+                                y2="9.365203" x2="99.308956" y1="100.647963" x1="99.308956" stroke-opacity="null"
+                                stroke-width="3" fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="99.93648" x2="99.308956"
+                                y1="188.933524" x1="99.308956" stroke-opacity="null" stroke-width="3" fill="none" />
+                        </g>
+                        <g id="hour">
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="99.763148" x2="98.900288"
+                                y1="51.17836" x1="98.900288" fill-opacity="null" stroke-width="5" stroke="#000000"
+                                fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="148.335333"
+                                x2="98.900288" y1="99.750546" x1="98.900288" fill-opacity="null" stroke-width="5"
+                                fill="none" />
+                        </g>
+                        <g id="sec">
+                            <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_26"
+                                y2="9.936631" x2="98.737529" y1="101.219391" x1="98.737529" stroke-opacity="null"
+                                fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_27" y2="100.507907"
+                                x2="98.737529" y1="189.504951" x1="98.737529" stroke-opacity="null" fill="none" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-4">
+                <h2 class="text-center">Martian Time</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" id="clock" viewBox="0 0 200 200">
+                    <g>
+                        <ellipse ry="98.333335" rx="98.333335" id="svg_2" cy="99.083343" cx="99.083342"
+                            stroke-width="1.5" fill="#DDDDDD" />
+                        <ellipse ry="3.888889" rx="3.888889" id="svg_4" cy="99.480005" cx="98.844871" stroke-width="1.5"
+                            stroke="#000000" fill="#000000" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="29.011012" x2="98.679308"
+                            y1="9.487236" x1="98.679308" fill-opacity="null" stroke-opacity="null" stroke-width="4"
+                            stroke="#000000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="188.952263" x2="98.881328"
+                            y1="169.428488" x1="98.881328" fill-opacity="null" stroke-opacity="null" stroke-width="4"
+                            stroke="#000000" fill="none" />
+                        <line transform="rotate(90 179.04959106445315,99.25782012939455) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_7" y2="109.019706" x2="179.04958" y1="89.495931"
+                            x1="179.04958" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(90 18.535934448242177,99.25782012939455) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_8" y2="109.019706" x2="18.535938" y1="89.495931"
+                            x1="18.535938" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(30 138.88128662109378,30.191871643066396) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_9" y2="39.953759" x2="138.881277" y1="20.429984"
+                            x1="138.881277" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(60 168.30883789062497,59.24907684326173) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_10" y2="69.010961" x2="168.30885" y1="49.487185"
+                            x1="168.30885" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(120 168.342529296875,139.6281280517578) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_11" y2="149.390025" x2="168.342523" y1="129.86625"
+                            x1="168.342523" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_12" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(30 58.847702026367244,168.71022033691406) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_14" y2="178.4721" x2="58.847705" y1="158.948325"
+                            x1="58.847705" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(60 29.42013549804691,139.4173126220703) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_15" y2="149.179211" x2="29.420132" y1="129.655435"
+                            x1="29.420132" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(120 29.58848571777344,59.42621612548828) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_16" y2="69.188104" x2="29.588483" y1="49.664328"
+                            x1="29.588483" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 58.881378173828125,30.166999816894524) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_17" y2="39.928887" x2="58.88138" y1="20.405112" x1="58.88138"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000" fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_18" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <line transform="rotate(150 138.88128662109372,168.65167236328122) " stroke-linecap="null"
+                            stroke-linejoin="null" id="svg_19" y2="178.413558" x2="138.881281" y1="158.889782"
+                            x1="138.881281" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000000"
+                            fill="none" />
+                        <g id="martian-min">
+                            <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_20"
+                                y2="9.365203" x2="99.308956" y1="100.647963" x1="99.308956" stroke-opacity="null"
+                                stroke-width="3" fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="99.93648" x2="99.308956"
+                                y1="188.933524" x1="99.308956" stroke-opacity="null" stroke-width="3" fill="none" />
+                        </g>
+                        <g id="martian-hour">
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="99.763148" x2="98.900288"
+                                y1="51.17836" x1="98.900288" fill-opacity="null" stroke-width="5" stroke="#000000"
+                                fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="148.335333"
+                                x2="98.900288" y1="99.750546" x1="98.900288" fill-opacity="null" stroke-width="5"
+                                fill="none" />
+                        </g>
+                        <g id="martian-sec">
+                            <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_26"
+                                y2="9.936631" x2="98.737529" y1="101.219391" x1="98.737529" stroke-opacity="null"
+                                fill="none" />
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_27" y2="100.507907"
+                                x2="98.737529" y1="189.504951" x1="98.737529" stroke-opacity="null" fill="none" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+<script src="marsdate.js"></script>
+<script src="challenge-2.js"></script>
+
+</html>
