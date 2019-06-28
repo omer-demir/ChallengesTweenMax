@@ -127,3 +127,7 @@ function getNasaInformation() {
 
 getWeatherResult();
 getNasaInformation();
+
+document.getElementById('update__weather').addEventListener('click',function(){
+    getWeatherResult();
+});

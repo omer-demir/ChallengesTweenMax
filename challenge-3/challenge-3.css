@@ -11,8 +11,22 @@
 }
 
 body {
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    margin: 0;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+figcaption {
+
+    font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -28,7 +42,7 @@ body {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
 }
 
@@ -119,6 +133,22 @@ p span {
     font-weight: 600;
 }
 
+.information__holder {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff45;
+    margin: 0 -22px;
+}
+
+.information__holder .information__title {
+    font-weight: 100;
+    margin-left: 1em;
+}
+
+.information__holder .information__owner {
+    font-weight: 500;
+    margin-right: 1em;
+}
 
 figure {
     margin: 1rem;
@@ -133,6 +163,7 @@ figure figcaption {
     width: 100%;
     padding: 1rem;
     -webkit-transition: max-height 0.3s ease-out;
+    color: #0d2e7d;
 }
 
 figure img {
@@ -180,19 +211,79 @@ section .section__body figure {
 
 section .section__body .details {
     flex: 1;
+    background: #ffffff45;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 1em 1em;
 }
 
 section .section__body .details ul {
     list-style-type: none;
+    color: black;
 }
 
 section .section__body .details .astroid__name {
     font-size: 19px;
     font-weight: bold;
-    color:red;
+    color: #0d2e7d;
 }
 
 section .section__body .details p span {
-    margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.solid__holder {
+    color: #0d2e7d;
+    background: #ffffff94;
+    border-radius: 10px;
+    flex: 0 0 15%;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em 2em;
+}
+
+.solid__holder.blue {
+    background: #0000ff7d;
+    color: white;
+}
+
+.solid__holder.green {
+    background: #00800070;
+    color: white;
+}
+
+.solid__holder.red {
+    background: #ff000057;
+    color: white;
+}
+
+.solid__holder.orange {
+    background: #ffa50073;
+    color: white;
+}
+
+.solid__holder.yellow {
+    background: #ffff007a;
+    color: white;
+}
+
+.solid__holder.magenta {
+    background: #ff00ff52;
+    color: white;
+}
+
+.btn {
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
 }

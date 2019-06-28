@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Challenge 3 - Zumre Ocak</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="challenge-3.css">
 </head>
 
@@ -13,7 +14,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Welcome to interplanetary system</h1>
+                <div class="information__holder">
+                    <h1 class="information__title">Welcome to Interplanetary Travel System</h1>
+                    <h1 class="information__owner">SpaceX</h1>
+                </div>
                 <section>
                     <div class="section__header"></div>
                     <div class="section__body">
@@ -25,13 +29,63 @@
                             </figcaption>
                         </figure>
                         <div class="details">
-                            <h2>Description</h2>
-                            <h4>Asteroid List</h4>
+                            <h2>Incoming Asteroid List</h2>
                             <ul id="astroids">
                             </ul>
                         </div>
                     </div>
                 </section>
+
+            </div>
+        </div>
+        <div class="weather__holder">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Current Weather Conditions</h2>
+                    <button id="update__weather" class="btn">Update weather report</button>
+                </div>
+                <div class="col-2 solid__holder red">
+                    <div class="sunrise text-center">
+                        <p>Sunrise at <span class="sunrise__time"></span></p>
+                        <img src="./icons/sun-fog-29.png" alt="">
+                    </div>
+                    <div class="sunset text-center green">
+                        <p>Sunset at <span class="sunset__time"></span></p>
+                        <img src="./icons/sun-fog-30.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 solid__holder yellow">
+                    <div class="wind text-center">
+                        <p>Wind speed <span class="wind__speed"></span></p>
+                        <p>Wind direction <span class="wind__direction"></span></p>
+                        <img src="./icons/wind-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 solid__holder orange">
+                    <div class="temp text-center">
+                        <p>Current temperature <span class="temp__current"></span>&#8451;</p>
+                        <p>Feeling temperature <span class="temp__feeling"></span>&#8451;</p>
+                        <img src="./icons/temperature-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 solid__holder blue">
+                    <div class="clouds text-center">
+                        <p>Clouds percentage <span class="clouds__percentage"></span>  %</p>
+                        <img src="./icons/cloud-forecast.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 solid__holder magenta">
+                    <div class="weather text-center">
+                        <p>Weather status <span class="weather__status"></span></p>
+                        <img id="weather__status__icon" src="./icons/cloud-forecast.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 solid__holder green">
+                    <div class="visibility text-center">
+                        <p>Visibility distance <span class="visibility__distance"></span> KM</p>
+                        <img src="./icons/cloud-forecast.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -70,53 +124,6 @@
                         Kennedy Space Station
                     </figcaption>
                 </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>Current Weather Conditions</p>
-            </div>
-            <div class="col-2">
-                <div class="sunrise text-center">
-                    <p>Sunrise at <span class="sunrise__time"></span></p>
-                    <img src="./icons/sun-fog-29.png" alt="">
-                </div>
-                <div class="sunset text-center">
-                    <p>Sunset at <span class="sunset__time"></span></p>
-                    <img src="./icons/sun-fog-30.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="wind text-center">
-                    <p>Wind speed <span class="wind__speed"></span></p>
-                    <p>Wind direction <span class="wind__direction"></span></p>
-                    <img src="./icons/wind-2.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="temp text-center">
-                    <p>Current temperature <span class="temp__current"></span></p>
-                    <p>Feeling temperature <span class="temp__feeling"></span></p>
-                    <img src="./icons/temperature-2.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="clouds text-center">
-                    <p>Clouds percentage <span class="clouds__percentage"></span></p>
-                    <img src="./icons/cloud-forecast.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="weather text-center">
-                    <p>Weather status <span class="weather__status"></span></p>
-                    <img id="weather__status__icon" src="./icons/cloud-forecast.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="visibility text-center">
-                    <p>Visibility distance <span class="visibility__distance"></span></p>
-                    <img src="./icons/cloud-forecast.png" alt="">
-                </div>
             </div>
         </div>
     </div>
